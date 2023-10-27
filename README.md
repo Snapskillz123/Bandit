@@ -8,6 +8,7 @@ The username, host and password are already provided on the website of the bandi
 
 Username: bandit0
 Password: bandit0
+![image](https://github.com/Snapskillz123/Bandit/assets/149099858/31734313-b674-4d37-9fe5-7ec08d8b604a)
 
 LEVEL 0  LEVEL 1:
 
