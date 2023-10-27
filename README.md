@@ -231,8 +231,8 @@ Level 13 -> 14
 2) I run the command 'ls' to list the files available and 'sshkey.private' comes up.
 3) I then realised I needed to log in to the file, so I used the 'ssh' command along with '-i' to select a file from which the identity for public key authentication is read. 'bandit14@localhost' is also required because we are logging on as bandit14 and as 'localhost' because I am logging in from my laptop.
 4) The required SSH key comes up.
+
  
-6) 
 
 
 
