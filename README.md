@@ -16,6 +16,7 @@ LEVEL 0 -> LEVEL 1:
 3) for printing content of files, I used the ‘cat’ command which printed the content of the file which was the required password for level 2.
 Username: bandit1
 Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
 ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/cdfc419c-0797-43c3-a967-4565b8e4e415)
 
 
@@ -27,7 +28,9 @@ Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 4)	I had learnt on Google that a ‘<’ operator needs to be used to read dash files.
 5)	I used the command ‘cat<-‘ and the desired file content got printed.
 Username: bandit2
+
 Password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
 ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/a2d4a0e0-8266-4c76-8768-07bf598a3218)
 
 
@@ -37,6 +40,7 @@ LEVEL 2 -> LEVEL 3:
 3)	I then used the ‘cat’ command to read the content of the file ‘spaces in this filename’.
 4)	The content printed was the password for the next level.
 Username: bandit3
+
 Password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/bfab661e-9452-4bfc-9dc2-053950cc266f)
@@ -50,6 +54,7 @@ LEVEL 3 -> LEVEL 4:
 5)	I then used ‘cat’ to print the contents of the hidden file and the required password came as the output.
 
 Username: bandit4
+
 Password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 
@@ -64,6 +69,7 @@ LEVEL 4 -> LEVEL 5:
 5)	Since -file07 was the only file with readable text, I read the contents of the file with ‘cat <-file07’ since it starts with dash.
 
 Username: bandit5
+
 Password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/c18ebf97-65b5-4123-bc8d-9d0fd3a3155e)
@@ -79,6 +85,7 @@ LEVEL 5 -> LEVEL 6:
 7)	I then read the contents of the file to find the required password for the next level.
 
 Username: bandit6
+
 Password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
  
@@ -96,7 +103,8 @@ LEVEL 6 -> LEVEL 7:
 7)	I then printed the contents of the file and obtained the required password.
 
 Username: bandit7
-Password: 	z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+Password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/5a15d0ec-a18b-42ca-8315-d66f68ab2767)
 
@@ -116,6 +124,7 @@ LEVEL 7 -> LEVEL 8:
 
 
 Username: bandit8
+
 Password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/203fcc32-c367-493f-97cc-cc1fdcbe676e)
@@ -131,6 +140,7 @@ LEVEL 8 -> LEVEL 9:
 6)	The required password then shows up after running the command.
 
  	Username: bandit9
+
 	Password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
 ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/293d8524-fdcf-4f16-9cf1-a83605f584cc)
@@ -147,6 +157,7 @@ I learnt that ‘^’ character can be used like a ‘startsWith’ function.
 6)	So I ran the command ‘cat data.txt | strings | grep ^= and I got a few strings pointing to the password.
 
 Username: bandit10
+
 Password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/674296fd-66c0-40c6-8797-926897630bd5)
@@ -161,6 +172,7 @@ LEVEL 10 -> LEVEL 11:
 6)	I then get the required password after decoding the base64 text.
 
 Username: bandit11
+
 Password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
  
@@ -175,6 +187,7 @@ LEVEL 11 -> LEVEL 12:
 4)	I converted the rot 13 into a regular string using the website https://rot13.com and got the required password.
 
 Username: bandit12
+
 Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/59eea7e1-dadd-4fc1-9951-08b9254193eb)
