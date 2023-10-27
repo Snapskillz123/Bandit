@@ -7,6 +7,7 @@ LEVEL 0:
 The username, host and password are already provided on the website of the bandit game.
 
 Username: bandit0
+
 Password: bandit0
 
 LEVEL 0 -> LEVEL 1:
@@ -14,7 +15,9 @@ LEVEL 0 -> LEVEL 1:
 1) After logging onto level 0, it says that there is a file in the directory called ‘readme’. 
 2) To list directory contents, ‘ls’ is the required command to find all the files in the directory and ‘readme’ came as the output.
 3) for printing content of files, I used the ‘cat’ command which printed the content of the file which was the required password for level 2.
+   
 Username: bandit1
+
 Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/cdfc419c-0797-43c3-a967-4565b8e4e415)
@@ -197,6 +200,34 @@ Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
  
 
 LEVEL 12 -> LEVEL 13:
+
+1)  After logging into the level, I see that data.txt file has hexdump content that has been repeatedly been compressed and the password is in it.
+2)  i run the command 'mkdir /tmp/cpy' to create a directory and then I used 'cp data.txt /tmp/cpy' to copy the file into my new directory.
+3)  I then use 'cd /tmp/cpy' to go into my directory and then run 'ls' to check if the file is in my directory.
+4)  i then use the command 'xxd -r data.txt > pswrd' to do a reverse hexdump and save the result in a file named 'pswrd'. xxd is used to create a hexdump or to decode a hexdump.
+5)  I then used the 'file' command to check the type of file that 'pswrd' was.
+6)  I then ran 'mv pswrd pswrd.gz' to change the filename into the preferred file extentions as it is a gzip compressed data.
+7)  I then run 'gunzip' command on the file to decompress it. gunzip is used to decompress gzip files.
+8)  Repeat step 5 to 7 with the respective file name. For repetition of 6), use the correct decompression command for the type of file that is there. for tar archive, use it with xvf which basically extracts, verboses and puts the data into a new file.
+9)  once we get an ascii text file, print the contents of the file using 'cat'.
+
+Username: bandit13
+
+Password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+![image](https://github.com/Snapskillz123/Bandit/assets/149099858/3bc2d339-31a6-422d-a713-d199c6a6d4ca)
+
+![image](https://github.com/Snapskillz123/Bandit/assets/149099858/d7586d51-cd36-466f-a13c-4c9ae86d124e)
+
+I used a few sites for reference for this question:
+
+https://github.com/s4shaNull/OverTheWire-Bandit-Writeup
+
+https://askubuntu.com/questions/1159845/what-is-tar-xvf
+
+
+
+
 
 
 
