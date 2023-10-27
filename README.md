@@ -225,8 +225,14 @@ https://github.com/s4shaNull/OverTheWire-Bandit-Writeup
 
 https://askubuntu.com/questions/1159845/what-is-tar-xvf
 
+Level 13 -> 14
 
-
+1) I log on to the next level and see that the password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. The required data is a private SSH key that is to be used to log on to the next level.
+2) I run the command 'ls' to list the files available and 'sshkey.private' comes up.
+3) I then realised I needed to log in to the file, so I used the 'ssh' command along with '-i' to select a file from which the identity for public key authentication is read. 'bandit14@localhost' is also required because we are logging on as bandit14 and as 'localhost' because I am logging in from my laptop.
+4) The required SSH key comes up.
+ 
+6) 
 
 
 
