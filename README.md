@@ -27,6 +27,7 @@ Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 3)	I tried to then print the content of the files using ‘cat –‘ command but no output came.
 4)	I had learnt on Google that a ‘<’ operator needs to be used to read dash files.
 5)	I used the command ‘cat<-‘ and the desired file content got printed.
+   
 Username: bandit2
 
 Password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
@@ -39,6 +40,7 @@ LEVEL 2 -> LEVEL 3:
 2)	I used ‘ls’ command to obtain the file ‘spaces in this filename’.
 3)	I then used the ‘cat’ command to read the content of the file ‘spaces in this filename’.
 4)	The content printed was the password for the next level.
+   
 Username: bandit3
 
 Password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
