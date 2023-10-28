@@ -325,6 +325,34 @@ Level 18 -> 19
 
       ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/b1ef883e-9fad-4ee8-8726-8e3e704b518b)
 
+   Level 20 -> 21
+
+   1) I log onto the next level and see that setuid makesaconnect to the port of our choice and takes the password of the current level as input and then gives us the password required.
+   2) I then use the command echo (so that it gives us an output when we enter the password) with nc so that it gives us a connection and listens (-l)
+   3) I then use the network daemon 'suconnect' and using the port that I provided i run this in the background.
+   4) I then get the required password
+
+      Username: bandit21
+      Password: NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
+      ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/98982a95-7028-456e-a476-faa2a345c12a)
+
+
+      Level 21 -> 22
+
+      1) I log onto the level and see that we need to analyse the cronjobs being executed in the background and look in /etc/cron.d
+      2) I then listed all the cronjobs using ls -la and saw that cronjob_bandit22 is what we need to access.
+      3) So i ran went into the /etc/cron.d and then read the contents of cronjob_bandit22 and a directory came up.
+      4) I then print the contents of the provided directory and a tmp folder comes up and everybody has permission to read that directory.
+      5) The required password then comes
+
+	 Username: bandit22
+	 Password: WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+
+ 	![image](https://github.com/Snapskillz123/Bandit/assets/149099858/b79208c7-a54f-4bc1-9fe8-bd87388382f8)
+
+
+
 
 
 
