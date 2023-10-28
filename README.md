@@ -230,7 +230,47 @@ Level 13 -> 14
 1) I log on to the next level and see that the password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. The required data is a private SSH key that is to be used to log on to the next level.
 2) I run the command 'ls' to list the files available and 'sshkey.private' comes up.
 3) I then realised I needed to log in to the file, so I used the 'ssh' command along with '-i' to select a file from which the identity for public key authentication is read. 'bandit14@localhost' is also required because we are logging on as bandit14 and as 'localhost' because I am logging in from my laptop.
-4) The required SSH key comes up.
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/651a223d-25c0-4a43-944b-e7f851c0a897)
+
+5) Using chmod, i had to change some permissions on my laptop locally to access the private key.
+6) I then ran the command on step 3 and i was granted access to the private key.
+7) I then ran cat /etc/bandit_pass/bandit14 to read the password.
+
+   Username: bandit14
+   PAssword: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+   
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/7dc44ffe-1a79-4d66-8a28-baa7b7b60537)
+
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/3f03955d-adb3-4179-a6ee-84aa40e7798b)
+
+   Level 14 -> 15
+
+   1)I log on to the next level and see that The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+   2) Using the manpages, i find the i need to use the NC(netcat) command to write the data across a network over localhost.
+   3) I run the command 'nc localhost 30000' and enter the password of the previous level to abotaint eh password.
+  
+      Username: bandit15
+      Password: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+      ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/bfb534c3-c7cb-4e94-a3f9-578ff1790e58)
+
+   level 15 -> 16
+
+   1) I log onto the next level and it says the password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.
+   2) I then went through the manpage to find --ssl commands for 'nc' and then executed it but an error came, so i then used the ncat command which can be used for connecting to ssl.
+   3) I then ran the same thing but with ncat command and entered the password for the current level and the required password came.
+  
+      Username: bandit16
+      Password: JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+      ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/417799d6-4b03-4e28-b69f-ac202aacdbc0)
+
+      
+
+
+
+
+
 
  
 
