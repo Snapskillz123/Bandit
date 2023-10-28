@@ -265,6 +265,71 @@ Level 13 -> 14
 
       ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/417799d6-4b03-4e28-b69f-ac202aacdbc0)
 
+Level 16 -> 17
+
+1)I log onto the next level and i see that password is between the posts 31000-32000, port should have a server listening on them and should speak ssl.
+2) I then run the command nmap to find the ports that can listen and understand ssh and a bunch of ports pop up.
+
+![image](https://github.com/Snapskillz123/Bandit/assets/149099858/7880e3f8-7915-4a2c-acfc-b81e5fc64670)
+
+3) I then use the ncat command on port 31790 because it is an ssl/unknown port and then obtain the private key by entering the password of the current level. Using the echo command i copy the private key into a file called bandit17key.private under the directory /tmp/bandit17
+4) I then run chmod to reduce permission so only I have access to the file.
+5) I then run ssh command to log into the 17th level.
+   
+  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/7822c9e5-43cf-4961-ada8-2f303db75845)
+
+7) I then print the contents of the file from the directory /etc/bandit_pass/bandit17
+
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/e8484a41-f353-48e5-b26a-8985e0a1ecbd)
+
+   Username: bandit17
+   Password: VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+
+   
+Level 17 -> 18
+
+1) I log into the level and it says there are two files passwords.new and passwords.old which are different by only one line.
+2) I run the ls commands to list the files available.
+3) I then use the command diff which is used to differentiate between text in files.
+4) It the gives me the two lines that are different in the files and the different content in passwords.new is the required password.
+
+   Username: bandit18
+   Password: hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/8b8f6546-c7ed-4d2d-bfb2-d404686368f7)
+
+Level 18 -> 19
+
+1) I log onto the level and see that there is a readme file, but the .bashrc file has been modified to log us out.
+2) When i try logging in it says ByeBye !
+   
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/a981fa6e-7125-477d-acec-355e6e57931f)
+
+3) I instead run the ssh code remotely instead of going in the interactive mode so i don't need to login to obtain the password
+4) i run the ssh command with cat readme at the end to remotely read the contents of the file.
+5) I then obtain the required password.
+
+   Username bandit19
+   Password: awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+   ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/af3f4671-fc17-441f-b161-56bc2d3b11bc)
+
+   Level 19 -> 20
+
+   1) I log onto the next level and it says that to gain access to the next level, you should use the setuid binary in the homedirectory.
+   2) I then use ls -la to list the owners and their permissions and bandit20 is the owner of setuid binary
+   3) I then go into bandit20 and read the file from /etc/bandit_pass/bandit20 and get the password.
+  
+      Username: bandit20
+      Password: VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+
+      ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/b1ef883e-9fad-4ee8-8726-8e3e704b518b)
+
+
+
+
+
+
       
 
 
