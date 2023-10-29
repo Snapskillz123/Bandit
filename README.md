@@ -10,7 +10,7 @@ Username: bandit0
 
 Password: bandit0
 
-# LEVEL 0 -> LEVEL 1:
+ LEVEL 0 -> LEVEL 1:
 
 1) After logging onto level 0, it says that there is a file in the directory called ‘readme’. 
 2) To list directory contents, ‘ls’ is the required command to find all the files in the directory and ‘readme’ came as the output.
