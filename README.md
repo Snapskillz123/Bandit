@@ -197,6 +197,9 @@ Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
  ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/59eea7e1-dadd-4fc1-9951-08b9254193eb)
 
+ ![image](https://github.com/Snapskillz123/Bandit/assets/149099858/3f7dd132-9a1a-439d-a970-0ae35beb54ff)
+
+
  
 
 LEVEL 12 -> LEVEL 13:
